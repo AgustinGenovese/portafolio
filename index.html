@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Agustin Genovese</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: 'class' }</script>
+    <style>html{scroll-behavior:smooth;scroll-padding-top:72px}</style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans dark:bg-gray-950 dark:text-gray-100">
+    <header class="bg-white shadow-md sticky top-0 z-50 dark:bg-gray-800 dark:shadow-gray-900/50" role="banner">
+        <div class="max-w-7xl mx-auto flex justify-between items-center py-3 px-4 md:py-4 md:px-10">
+            <div class="flex items-center">
+                <h1 class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">Agustin Genovese</h1>
+            </div>
+
+            <div class="flex items-center space-x-1">
+                <button id="dark-toggle" class="text-gray-700 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400 focus:outline-none p-2 rounded-lg" aria-label="Alternar modo oscuro">
+                    <svg class="hidden dark:block w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                    <svg class="block dark:hidden w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                </button>
+
+                <button id="menu-toggle" class="md:hidden block text-gray-700 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400 focus:outline-none p-2 rounded-lg" aria-label="Abrir menú" aria-expanded="false">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+
+                <nav id="nav-menu" class="hidden md:block" aria-label="Navegación principal">
+                    <ul class="flex flex-col md:flex-row md:space-x-6 text-gray-700 font-medium dark:text-gray-300">
+                        <li class="py-2 md:py-0"><a href="#about" class="hover:text-indigo-600 dark:hover:text-indigo-400 nav-link">Sobre mí</a></li>
+                        <li class="py-2 md:py-0"><a href="#projects" class="hover:text-indigo-600 dark:hover:text-indigo-400 nav-link">Proyectos</a></li>
+                        <li class="py-2 md:py-0"><a href="#contact" class="hover:text-indigo-600 dark:hover:text-indigo-400 nav-link">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main role="main">
+
+    <section id="about" class="flex flex-col items-center justify-center text-center py-12 bg-indigo-50 dark:bg-indigo-900/20">
+        <img src="imagenes/image.png" alt="Fotografía de Agustin Genovese, desarrollador de software" class="w-40 h-40 rounded-full mb-6 object-cover" loading="lazy">
+
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">Hola, soy Agustin</h2>
+        <p class="text-gray-600 max-w-xl mb-6 dark:text-gray-400">
+            Soy desarrollador de software y me apasiona la informatica. Actualmente estoy cursando el último año de la
+            Tecnicatura en Programación y Sistemas en la Universidad Tecnológica Nacional (UTN).
+        </p>
+
+    </section>
+
+    <section id="projects" class="max-w-7xl mx-auto py-12 px-4">
+        <h3 class="text-2xl font-semibold text-indigo-500 text-center mb-8 dark:text-indigo-400">Mis Proyectos</h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition dark:bg-gray-800 dark:shadow-gray-900/30">
+                <div class="w-full h-48 overflow-hidden">
+                    <img class="w-full h-full object-cover" src="imagenes/pic1.png" alt="Captura de pantalla del E-commerce Magic Argentina" loading="lazy">
+                </div>
+                <div class="p-6">
+                    <h4 class="text-xl font-semibold mb-2">E-commerce</h4>
+                    <p class="text-gray-600 mb-2 text-justify dark:text-gray-400">
+                        Tienda online para Magic Argentina con catálogo de productos y carrito de compras. Pagos y cobros en línea con Mercado Pago integrado.
+                    </p>
+                    <hr class="border-gray-200 dark:border-gray-700 my-2">
+                    <p class="text-xs text-gray-400 dark:text-gray-500">
+                        Node.js · Express · MongoDB · React
+                    </p>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition dark:bg-gray-800 dark:shadow-gray-900/30">
+                <div class="w-full h-48 overflow-hidden">
+                    <img class="w-full h-full object-cover" src="imagenes/pic2.png" alt="Captura de pantalla del Gestor de Turnos para Sarkirian Barbería" loading="lazy">
+                </div>
+                <div class="p-6">
+                    <h4 class="text-xl font-semibold mb-2">Gestor de Turnos</h4>
+                    <p class="text-gray-600 mb-2 text-justify dark:text-gray-400">
+                        Sistema de turnos online y cobros para barberías. Los clientes reservan, pagan con Mercado Pago y reciben notificaciones en tiempo real.
+                    </p>
+                    <hr class="border-gray-200 dark:border-gray-700 my-2">
+                    <p class="text-xs text-gray-400 dark:text-gray-500">
+                        Node.js · Express · MongoDB · React
+                    </p>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition dark:bg-gray-800 dark:shadow-gray-900/30">
+                <div class="w-full h-48 overflow-hidden relative">
+                    <div class="absolute inset-0 bg-gray-200 flex items-center justify-center text-gray-500 text-sm dark:bg-gray-700 dark:text-gray-400">Video no disponible</div>
+                    <iframe class="w-full h-full object-cover relative z-10" src="https://www.youtube.com/embed/cToRl9CTtHI"
+                        title="Demostración del Catálogo Mueblería" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen loading="lazy">
+                    </iframe>
+                </div>
+                <div class="p-6">
+                    <h4 class="text-xl font-semibold mb-2">Catálogo de Productos</h4>
+                    <p class="text-gray-600 mb-2 text-justify dark:text-gray-400">
+                        Catálogo web interactivo con filtros por categoría y lista de favoritos. Navegación rápida para explorar productos y descubrir las novedades.
+                    </p>
+                    <hr class="border-gray-200 dark:border-gray-700 my-2">
+                    <p class="text-xs text-gray-400 dark:text-gray-500">
+                        Node.js · Express · MongoDB · EJS · <a href="https://catalogo-lufran.vercel.app" target="_blank" class="text-indigo-500 hover:underline dark:text-indigo-400">Ver demo</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row justify-center gap-8">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition w-full md:w-1/3 dark:bg-gray-800 dark:shadow-gray-900/30">
+                <div class="w-full h-48 overflow-hidden relative">
+                    <div class="absolute inset-0 bg-gray-200 flex items-center justify-center text-gray-500 text-sm dark:bg-gray-700 dark:text-gray-400">Video no disponible</div>
+                    <iframe class="w-full h-full object-cover relative z-10" src="https://www.youtube.com/embed/4hOFelOc5jA"
+                        title="Demostración del Gestor de Ventas" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen loading="lazy">
+                    </iframe>
+                </div>
+                <div class="p-6">
+                    <h4 class="text-xl font-semibold mb-2">Gestor Ventas</h4>
+                    <p class="text-gray-600 mb-2 text-justify dark:text-gray-400">
+                        Sistema web empresarial con arquitectura en capas. Administra clientes, productos y operaciones comerciales desde un panel centralizado.
+                    </p>
+                    <hr class="border-gray-200 dark:border-gray-700 my-2">
+                    <p class="text-xs text-gray-400 dark:text-gray-500">
+                        ASP.NET · VB.NET · SQL Server · <a href="https://github.com/AgustinGenovese/gestor-negocio" target="_blank" class="text-indigo-500 hover:underline dark:text-indigo-400">Repositorio</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition w-full md:w-1/3 dark:bg-gray-800 dark:shadow-gray-900/30">
+                <div class="w-full h-48 overflow-hidden relative">
+                    <div class="absolute inset-0 bg-gray-200 flex items-center justify-center text-gray-500 text-sm dark:bg-gray-700 dark:text-gray-400">Video no disponible</div>
+                    <iframe class="w-full h-full object-cover relative z-10"
+                        src="https://www.youtube.com/embed/uQvPlwgc9TA?si=FnmMDKBzB-rziKKR"
+                        title="Demostración del Administrador de Restaurante" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen loading="lazy"></iframe>
+                </div>
+                <div class="p-6">
+                    <h4 class="text-xl font-semibold mb-2">Administrador Restaurante</h4>
+                    <p class="text-gray-600 mb-2 text-justify dark:text-gray-400">
+                        Software de escritorio para la gestión diaria de un restaurante. Control de
+                        clientes, empleados, mesas, pedidos y stock de productos.
+                    </p>
+                    <hr class="border-gray-200 dark:border-gray-700 my-2">
+                    <p class="text-xs text-gray-400 dark:text-gray-500">
+                        .NET · C# · SQL Server · WinForms · <a href="https://github.com/AgustinGenovese/gestor-restaurante" target="_blank" class="text-indigo-500 hover:underline dark:text-indigo-400">Repositorio</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-indigo-50 py-12 dark:bg-indigo-900/20">
+        <h3 class="text-2xl font-semibold text-indigo-500 text-center mb-6 dark:text-indigo-400">Contacto</h3>
+
+        <div class="max-w-lg mx-auto bg-white rounded-2xl shadow-lg p-8 dark:bg-gray-800 dark:shadow-gray-900/30">
+            <p class="text-gray-700 text-center mb-6 dark:text-gray-300">
+                Ponte en contacto conmigo por email o teléfono, o visita mis perfiles profesionales para ver más sobre
+                mi trabajo.
+            </p>
+
+            <div id="contact-info" class="text-center space-y-2"></div>
+
+            <div class="flex justify-center space-x-6 mt-6">
+                <a href="https://github.com/AgustinGenovese" target="_blank"
+                    class="hover:scale-110 transform transition" aria-label="Perfil de GitHub">
+                    <img src="imagenes/github.png" alt="GitHub" class="h-10 w-10" loading="lazy">
+                </a>
+                <a href="https://www.linkedin.com/in/agustin-genovese-8b1111148/" target="_blank"
+                    class="hover:scale-110 transform transition" aria-label="Perfil de LinkedIn">
+                    <img src="imagenes/lkd.jpg" alt="LinkedIn" class="h-10 w-10 rounded-full" loading="lazy">
+                </a>
+            </div>
+
+            <div class="flex justify-center mt-6">
+                <a href="mailto:agusgenot@gmail.com"
+                   class="inline-flex items-center gap-2 px-6 py-3 bg-indigo-600 text-white rounded-lg font-medium hover:bg-indigo-700 transition dark:bg-indigo-500 dark:hover:bg-indigo-600">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    Enviar Email
+                </a>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <footer class="bg-white border-t py-6 mt-12 dark:bg-gray-800 dark:border-gray-700" role="contentinfo">
+        <p class="text-center text-gray-500 text-sm dark:text-gray-400">&copy; 2026 Agustin Genovese.</p>
+    </footer>
+
+    <a href="https://wa.me/541165919418" target="_blank"
+       class="fixed bottom-4 right-4 z-50 bg-green-500 hover:bg-green-600 text-white p-3.5 rounded-full shadow-lg hover:shadow-xl transition group dark:bg-green-600 dark:hover:bg-green-500"
+       aria-label="Chatear por WhatsApp">
+        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        <span class="absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-gray-800 text-white text-sm px-2 py-1 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition pointer-events-none dark:bg-gray-100 dark:text-gray-800">
+            Chateá conmigo
+        </span>
+    </a>
+
+    <script>
+        (function() {
+            var html = document.documentElement;
+            var toggle = document.getElementById('dark-toggle');
+
+            function setTheme(isDark) {
+                if (isDark) {
+                    html.classList.add('dark');
+                } else {
+                    html.classList.remove('dark');
+                }
+                localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            }
+
+            var stored = localStorage.getItem('theme');
+            if (stored) {
+                setTheme(stored === 'dark');
+            } else {
+                setTheme(window.matchMedia('(prefers-color-scheme: dark)').matches);
+            }
+
+            if (toggle) {
+                toggle.addEventListener('click', function() {
+                    setTheme(!html.classList.contains('dark'));
+                });
+            }
+
+            var menuToggle = document.getElementById('menu-toggle');
+            var menu = document.getElementById('nav-menu');
+
+            if (menuToggle && menu) {
+                menuToggle.addEventListener('click', function() {
+                    var expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+                    menuToggle.setAttribute('aria-expanded', String(!expanded));
+                    menu.classList.toggle('hidden');
+                    menuToggle.innerHTML = expanded
+                        ? '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>'
+                        : '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>';
+                });
+            }
+
+            document.querySelectorAll('.nav-link').forEach(function(link) {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var target = document.querySelector(link.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                    if (menu && window.innerWidth < 768) {
+                        menu.classList.add('hidden');
+                        if (menuToggle) menuToggle.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            });
+
+            var contactInfo = document.getElementById('contact-info');
+            if (contactInfo) {
+                contactInfo.innerHTML = '\
+                    <p class="text-gray-800 font-medium dark:text-gray-200"><strong>Email:</strong> <a href="mailto:agusgenot@gmail.com" class="text-indigo-600 hover:underline dark:text-indigo-400">agusgenot@gmail.com</a></p>\
+                    <p class="text-gray-800 font-medium dark:text-gray-200"><strong>Teléfono:</strong> 11 6591 9418</p>\
+                ';
+            }
+        })();
+    </script>
+
+</body>
+
+</html>
